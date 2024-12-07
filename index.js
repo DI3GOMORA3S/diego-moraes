@@ -1,17 +1,20 @@
 import express from "express";
+import path from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const app = express();
-const PORT = 3000;
 
-//Sirve los archivos de "public" al frontend
-app.use(express.static("public"));
+// Configura Express para servir archivos estáticos de React
+app.use(express.static(path.join(__dirname, "client", "build")));
 
-// Ruta principal
-app.get("/", (req, res) => {
-  res.render("home.ejs");
+// Ruta genérica para manejar el enrutamiento de React
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
 });
 
 // Inicia el servidor
-app.listen(PORT, () => {
-  console.log(`Servidor corriendo en http://localhost:${PORT}`);
-});
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`Servidor corriendo en el puerto ${PORT}`));
