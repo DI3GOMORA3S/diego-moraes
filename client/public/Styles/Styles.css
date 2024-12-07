@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(14, 13, 11);
+    margin: 0px;
+    padding: 0px;
+}
+
+/* ###### NAVBAR ###### */
+.navbar{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 20px 0px;
+    padding: 0;
+}
+
+.navbar li{
+    margin: 0 15px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+/* ###### NAVBAR ###### */
+
+/* color violeta: 162 0 247 */
