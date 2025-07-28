@@ -14,5 +14,5 @@ const __dirname = path.dirname(__filename);
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.listen(PORT, '0.0.0.0',() => {
-  console.log(`Servidor corriendo en http://0.0.0.0:${PORT} locoooooo`);
+  console.log(`Servidor corriendo en http://0.0.0.0:${PORT}`);
 });
