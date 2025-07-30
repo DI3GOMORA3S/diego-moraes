@@ -7,25 +7,39 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div >
-        <ul class="navbar">
-            <li class="navbar-el"><a class="navbar-link" href="#Home"><img class="nav-icon" src="./images/icons/home.png" alt=""></a></li>
-            <li class="navbar-el"><a class="navbar-link" href="#About"><img class="nav-icon" src="./images/icons/info.png" alt=""></a></li>
-            <li class="navbar-el"><a class="navbar-link" href="#Portfolio"><img class="nav-icon" src="./images/icons/briefcase.png" alt=""></a></li>
-            <li class="navbar-el"><a class="navbar-link" href="#Contact"><img class="nav-icon" src="./images/icons/phone-guide.png" alt=""></a></li>
-        </ul>
-    </div>
+    <header class="header">
+        <div class="header__content">
+            <a href="#" class="logo">
+                <!-- <img class="logo__img" src="./images/icons/home.png" alt=""> -->
+                 <h3>Diego Moraes</h3>
+            </a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="" class="nav__link">About Me</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="nav__link">Projects</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="btn">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
     <section id="Home">
         <div class="sector">
             <div class="home-title">
-                <H1 class="title">DIEGO MORAES</H1>
-                <h2 class="title">FULLSTACK DEVELOPER</h2>
+                <H1 class="title lft-red-border">DIEGO MORAES</H1>
+                <h2 class="title lft-red-border">FULLSTACK DEVELOPER</h2>
                 <p class="text">Passionate about technology and software development, I currently work in the industrial automation and telemetry sector, focusing on data processing, transformation, and visualization to generate valuable insights.
 
                 I have experience in full-stack web development, using JavaScript, Node.js, and Express, along with knowledge of Python for task automation and scripting.
 
                 I'm always exploring new technologies and developing personal projects in software, combining creativity and efficiency to build innovative solutions.</p>
+                <button class="about-btn" onclick="location.href='#About'">About Me</button>
             </div>
             <div class="bottom-line"></div>
         </div>
