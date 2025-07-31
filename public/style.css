@@ -23,6 +23,7 @@ body{
   font-family: 'Inter', sans-serif;
   min-height: 5000px;
   padding-top: 60px;
+  background-color: rgb(19, 22, 26);
 }
 
 html{
@@ -48,6 +49,23 @@ html{
 
 
 /* #### TEST #### */
+.logo__name{
+  color: #777777;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+}
+
+.sector__about{
+  background-color: white;
+}
+
+
+
+.sector__contact{
+  background-color: rgb(19, 22, 26);
+}
 
 .lft-red-border{
   border-left: solid 10px #e10600;
@@ -79,7 +97,6 @@ html{
   margin: 0;
   padding: 0;
   /* background-color: #111111; */
-  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -116,7 +133,6 @@ html{
 .home-title p{
   font-size: 1vw;
 }
-/* #### TEST #### */
 
 
 
@@ -125,8 +141,13 @@ html{
 .header{
   background-color: rgb(19, 22, 26);
   position: fixed;
-  width: 100%;
-  top: 0px;
+  width: 80%;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  border-radius: 10px;
+  z-index: 1000;
 }
 
 .header__content{
@@ -158,23 +179,66 @@ html{
 }
 
 .nav_item{
-
+  
 }
 
 .nav__link{
   color: rgba(255, 255, 255, 0.75);
   font-size: 15px;
-  transition: all 0.4s;
+  transition: ease 0.3s;
+  padding: 8px 0px;
 }
 
 .nav__link:hover{
   color: rgba(255, 255, 255, 1);
+  border-bottom: #e10600 solid 3px;
 }
 
 .btn{
   color: white;
+  border: solid 3px #e10600;
+  border-radius: 25px;
+  padding: 8px 16px;
+  transition: ease 0.3s;
 }
 
+.btn:hover{
+  color: rgb(19, 22, 26);
+  background-color: #e10600;
+}
+
+/* #### PORTFOLIO #### */
+.portfolio__sector{
+  background-color: rgb(19, 22, 26);
+  /* background-color: blue; */
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio__grid{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  width: 100%;
+  padding: 5%;
+}
+
+.portfolio__box{
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  overflow: hidden;
+  /* border-radius: 20px; */
+  filter: grayscale(100%);
+}
+
+.portfolio__box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* #### MEDIAS #### */
 @media (max-width: 650px) {
   .header__content{
     flex-direction: column;
@@ -187,5 +251,4 @@ html{
     column-gap: 20px;
   }
 }
-
-/* #### NAVBAR #### */
+/* #### MEDIAS #### 
