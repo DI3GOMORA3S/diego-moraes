@@ -7,54 +7,64 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <div class="header__content">
-            <a href="#Home" class="logo">
-                <!-- <img class="logo__img" src="./images/icons/home.png" alt=""> -->
-                 <h3 class="logo__name">Diego Moraes</h3>
-            </a>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#About" class="nav__link">About Me</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#Portfolio" class="nav__link">Projects</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#Contact" class="btn">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <section id="Home">
-        <div class="sector">
-            <div class="home-title">
-                <H1 class="title lft-red-border">Hola SEBA!</H1>
-                <h2 class="title lft-red-border">¿COMO ESTAS?</h2>
-                <button class="about-btn" onclick="location.href='#About'">About Me</button>
+    <div class="background-animated"></div>
+    <main>
+        <section id="Home">
+            <div class="sector">
+                <header class="header">
+                    <div class="header__content">
+                        <a href="#Home" class="logo">
+                            <!-- <img class="logo__img" src="./images/icons/home.png" alt=""> -->
+                            <h3 class="logo__name">Diego Moraes</h3>
+                        </a>
+                        <nav class="nav">
+                            <ul class="nav__list">
+                                <li class="nav__item">
+                                    <img class="icon" style="width: 30px;" src="/public//images/icons/light.png" alt="">
+                                    <a href="#About" class="nav__link">About Me</a>
+                                </li>
+                                <li class="nav__item">
+                                    <img class="icon" style="width: 30px;" src="/public/images/icons/black-and-white.png" alt="">
+                                    <a href="#Portfolio" class="nav__link">Projects</a>
+                                </li>
+                                <li class="nav__item">
+                                    <img class="icon" style="width: 30px;" src="/public/images/icons/arrow.png" alt="">
+                                    <a href="#Contact" class="nav__link">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <a href="">
+                            Download CV
+                        </a>
+                    </div>
+                </header>
+                <div>
+                    <h1>DIEGO MORAES</h1>
+                    <h2>FRONT-END DEVELOPER</h2>
+                </div>
             </div>
-        </div>
-    </section>
-    
-    <section id="About">
-        <div class="sector sector__about">
-            <div class="background-animated"></div>
-        </div>
-    </section>
-    
-    <section id="Portfolio">
-        <div class="sector portfolio__sector">
-            <div class="portfolio__grid">
+        </section>
+        
+        <section id="About">
+            <div class="sector">
+                <div class="about__container">
+                    <div class="about__item solid__item"><h4>IMPORTANT INFORMATION ABOUT ME</h4></div>
+                    <div class="about__item translucent__item">TECNOLOGIES I KNOW</div>
+                    <div class="about__item translucent__item">PROF EXPERIENCE</div>
+                    <div class="about__item translucent__item">STUDIES</div>
+                </div>
             </div>
-        </div>
-    </section>
-    
-    <section id="Contact">
-        <div class="sector sector__contact"><h4>Contact</h4></div>
-    </section>
+        </section>
+        
+        <section id="Portfolio">
+            <div class="sector">
 
+            </div>
+        </section>
+        
+        <section id="Contact">
+            <div class="sector"></div>
+        </section>
+    </main>
 </body>
 </html>

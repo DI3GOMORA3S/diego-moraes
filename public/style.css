@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bevan:ital@0;1&family=Fjalla+One&family=Roboto+Condensed:ital@0;1&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&family=Fjalla+One&family=Roboto+Condensed:ital@0;1&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bevan:ital@0;1&family=Fjalla+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital@0;1&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 /* RESET */
 *{
@@ -20,9 +18,6 @@ ul{
 }
 
 body{
-  font-family: 'Inter', sans-serif;
-  min-height: 5000px;
-  padding-top: 60px;
   background-color: black;
 }
 
@@ -30,67 +25,13 @@ html{
   scroll-behavior: smooth;
 }
 
-
-.title{
-  color: #f3f3f3;
-  font-family: "Anton", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: -7px;
-  line-height: 1;
-}
-
-.text{
-  color: #f3f3f3;
-  font-family: "Fjalla One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-
 /* #### TEST #### */
 .logo__name{
   color: #f3f3f3;
-  font-family: "Anton", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 40px;
-}
-
-.sector__about{
-  background-color: white;
-}
-
-
-
-.sector__contact{
-  background-color: rgb(19, 22, 26);
-  width: 100%;
-  height: 100vh;
-}
-
-.lft-red-border{
-  border-left: solid 10px #e10600;
-}
-
-.about-btn{
-  height: 5%;
-  width: 9%;
-  color: #e10600;
-  border: 3px solid #e10600;
-  background-color: #111111;
-  border-radius: 25px;
-  cursor: pointer;
-  font-family: "Fjalla One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1vw;
-  transition: ease-out 0.2s;
-}
-
-.about-btn:hover{
-  background-color: #e10600;
-  color: #777777;
 }
 
 .sector{
@@ -98,50 +39,21 @@ html{
   height: 100vh;
   margin: 0;
   padding: 0;
-  /* background-color: #111111; */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
 }
 
-.home-title{
-  height: 100%;
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+h1, h2 {
+  color: #f3f3f3;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 100px;
+
 }
-
-.home-title h1{
-  font-size: 10vw;
-  padding: 0;
-  margin: 0;
-}
-
-.home-title h2{
-  font-size: 8vw;
-  padding: 0;
-  margin: 0;
-}
-
-.home-title p{
-  font-size: 1vw;
-}
-
-
-
 
 /* #### NAVBAR #### */
 .header{
-  background-color: #3a4652;
-  position: fixed;
-  width: 80%;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 10px;
-  border-radius: 10px;
+  width: 100%;
+  padding: 10px 100px;
   z-index: 1000;
 }
 
@@ -173,20 +85,18 @@ html{
   column-gap: 40px;
 }
 
-.nav_item{
-  
+.nav__item{
+  display: flex;
+  align-items: center;
 }
 
 .nav__link{
-  color: rgba(255, 255, 255, 0.75);
-  font-size: 15px;
-  transition: ease 0.3s;
-  padding: 8px 0px;
-}
-
-.nav__link:hover{
-  color: rgba(255, 255, 255, 1);
-  border-bottom: #13161a solid 4px;
+  color: #f3f3f3;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  padding-left: 10px;
 }
 
 .btn{
@@ -202,38 +112,62 @@ html{
   background-color: #13161a;
 }
 
-/* #### PORTFOLIO #### */
-.portfolio__sector{
-  background-color: rgb(19, 22, 26);
+.nav__item .icon{
+  display: inline-block;
+  transition: transform 0.5s ease;
+}
+
+.nav__item:hover .icon{
+  transform: rotate(180deg);
+}
+
+/* #### ABOUT #### */
+.about__container{
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  height: 100vh;
+  border: rgba(100, 100, 100, 0.5) solid 2px;
 }
 
-.portfolio__grid{
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 10px;
-  width: 100%;
-  padding: 5%;
+.about__item{
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+  border: rgba(100, 100, 100, 0.5) solid 1px;
 }
 
-.portfolio__box{
-  aspect-ratio: 1 / 1;
-  width: 100%;
-  overflow: hidden;
-  /* border-radius: 20px; */
-  filter: grayscale(100%);
+@media (max-width: 650px) {
+  .about__container{
+    flex-direction: column;
+  }
+
+  .about__item{
+    height: 100vh;
+  }
 }
 
-.portfolio__box img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  image-rendering: pixelated;
+.translucent__item{
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  color: #f3f3f3;
+  background-color: black;
+  transition: 0.5s ease-in-out;
+    &:hover{
+    background-color: transparent;
+  }
 }
 
-/* #### MEDIAS #### */
+.solid__item{
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  color: black;
+  background-color: #f3f3f3;
+}
+
 @media (max-width: 650px) {
   .header__content{
     flex-direction: column;
@@ -246,19 +180,20 @@ html{
     column-gap: 20px;
   }
 }
-/* #### MEDIAS ####  */
 
 .background-animated {
   position: fixed;
   inset: 0;
   z-index: -1;
-  background: radial-gradient(circle at var(--x, 50%) var(--y, 50%), #3a48c1, #dd3dbe, #ff7a5c, #000);
+  background: radial-gradient(circle at var(--x, 50%) var(--y, 50%), #3a48c1, #dd3dbe, #ff7a5c, #000000);
   background-size: 400% 400%;
   animation: bgmove 10s ease-in-out infinite;
   filter: blur(100px);
   opacity: 0.7;
+  pointer-events: none;
+  transform: scale(0.9);
+  transform-origin: center;
 }
-
 @keyframes bgmove {
   0%   { background-position: 0% 50%; }
   50%  { background-position: 100% 50%; }
