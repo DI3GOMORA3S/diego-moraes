@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
 /* RESET */
 *{
@@ -25,6 +25,12 @@ html{
   scroll-behavior: smooth;
 }
 
+.default__text{
+  font-family: "Share Tech Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
+}
+
 /* #### TEST #### */
 .logo__name{
   color: #f3f3f3;
@@ -47,7 +53,6 @@ h1, h2 {
   font-weight: 400;
   font-style: normal;
   font-size: 100px;
-
 }
 
 /* #### NAVBAR #### */
@@ -76,10 +81,6 @@ h1, h2 {
   display: block;
 }
 
-.nav{
-
-}
-
 .nav__list{
   display: flex;
   column-gap: 40px;
@@ -92,24 +93,8 @@ h1, h2 {
 
 .nav__link{
   color: #f3f3f3;
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
   font-size: 25px;
   padding-left: 10px;
-}
-
-.btn{
-  color: white;
-  border: solid 3px #13161a;
-  border-radius: 25px;
-  padding: 8px 16px;
-  transition: ease 0.3s;
-}
-
-.btn:hover{
-  color: #3a4652;
-  background-color: #13161a;
 }
 
 .nav__item .icon{
@@ -121,12 +106,25 @@ h1, h2 {
   transform: rotate(180deg);
 }
 
+@media (max-width: 650px) {
+  .header__content{
+    flex-direction: column;
+    padding: 25px 0;
+    row-gap: 18px;
+    align-items: center;
+  }
+
+  .nav__list{
+    column-gap: 20px;
+  }
+}
+
 /* #### ABOUT #### */
 .about__container{
   display: flex;
   flex-direction: row;
   height: 100vh;
-  border: rgba(100, 100, 100, 0.5) solid 2px;
+  border: rgba(100, 100, 100, 0.5) solid 1px;
 }
 
 .about__item{
@@ -147,11 +145,8 @@ h1, h2 {
 }
 
 .translucent__item{
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 30px;
   color: #f3f3f3;
+  font-size: 30px;
   background-color: black;
   transition: 0.5s ease-in-out;
     &:hover{
@@ -160,26 +155,11 @@ h1, h2 {
 }
 
 .solid__item{
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 30px;
   color: black;
+  font-size: 30px;
   background-color: #f3f3f3;
 }
 
-@media (max-width: 650px) {
-  .header__content{
-    flex-direction: column;
-    padding: 25px 0;
-    row-gap: 18px;
-    align-items: center;
-  }
-
-  .nav__list{
-    column-gap: 20px;
-  }
-}
 
 .background-animated {
   position: fixed;
@@ -198,4 +178,24 @@ h1, h2 {
   0%   { background-position: 0% 50%; }
   50%  { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
+}
+
+.timeline__container{
+  height: 100%;
+  width: 100%;
+  text-align: left;
+  color: #a6a7b0;
+}
+
+.timeline__container ul{
+  border-left: 5px solid #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  margin-left: 10px;
+}
+
+.timeline__container li{
+  padding-left: 20px;
 }
